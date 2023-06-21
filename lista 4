@@ -1,0 +1,169 @@
+Idade,Altura,Peso
+25,165,60
+30,175,70
+35,180,80
+40,160,55
+45,170,65
+
+25,165,60
+30,175,70
+35,180,80
+40,160,55
+45
+
+25,165,60
+30,175,70
+35
+
+25,165,60
+30,175,70
+
+25,165,60
+30
+
+25
+import pandas as pd
+
+# Lendo a base de dados
+dados = pd.read_csv(
+dados = pd.read_csv
+
+dados
+'caminho/para/o/arquivo.csv')
+
+# Apresentando as primeiras linhas
+primeiras_linhas = dados.head()
+
+prime
+print(primeiras_linhas)
+def calcular_imc(altura, peso):
+    
+   
+"""
+    Calcula o Índice de Massa Corporal (IMC) com base na altura e peso fornecidos.
+
+    Args:
+        altura (float): Altura em metros.
+        peso (float): Peso em quilogramas.
+
+    Returns:
+        float: Valor do IMC.
+    """
+    imc = peso / (altura ** 
+    imc
+
+   
+2)
+    
+   
+return imc
+altura = 1.75  # em metros
+peso = 
+peso
+
+pes
+70.0  # em quilogramas
+
+resultado_imc = calcular_imc(altura, peso)
+
+
+resultado_imc
+
+
+print("O IMC é:", resultado_imc)
+def classificar_imc(imc):
+    """
+    Classifica o IMC em categorias com base em faixas de valores.
+
+    Args:
+        imc (float): Valor do Índice de Massa Corporal (IMC).
+
+    Returns:
+        str: Categoria do IMC.
+    """
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif imc < 25:
+        
+       
+return "Peso normal"
+    
+   
+elif imc < 30:
+        
+       
+return "Sobrepeso"
+    else:
+        
+       
+return "Obesidade"
+
+
+# Exemplo de uso com uma estrutura de repetição (loop for) e uma estrutura de condição (if-elif-else)
+dados = [
+    {
+dados = [
+   
+"altura": 1.65, "peso": 60},
+    {
+   
+"altura": 1.8, "peso": 75},
+    {
+   
+"altura": 1.7, "peso": 90},
+]
+
+for pessoa in dados:
+    altura = pessoa[
+   
+"altura"]
+    peso = pessoa[
+    peso = pessoa
+
+   
+"peso"]
+
+    imc = calcular_imc(altura, peso)
+    categoria = classificar_imc(imc)
+
+    
+
+    imc = calcular_imc(altura, peso)
+    categoria = classificar_imc(imc)
+
+
+
+    imc = calcular_imc(altura, peso)
+   
+
+
+    imc = calcular_imc(altura, peso)
+
+
+   
+print(f"A pessoa com altura {altura} m e peso {peso} kg possui IMC {imc:.2f}, classificado como {categoria}.")
+def filtrar_numeros_pares(numeros):
+    """
+    Filtra apenas os números pares de uma lista de números.
+
+    Args:
+        numeros (list): Lista de números.
+
+    Returns:
+        list: Lista contendo apenas os números pares.
+    """
+    numeros_pares = list(filter(lambda x: x % 2 == 0, numeros))
+    return numeros_pares
+
+
+# Exemplo de uso da função filter()
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+numeros_pares = filtrar_numeros_pares(lista_numeros)
+
+
+numeros_pares = filtr
+
+
+numeros
+print("Números pares:", numeros_pares)
